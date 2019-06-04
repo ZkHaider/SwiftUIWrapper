@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		C4400C3B22A6637500063F2B /* SwiftUIWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = C4400C3922A6637500063F2B /* SwiftUIWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C4400C4222A6638300063F2B /* Nibless.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4400C4122A6638300063F2B /* Nibless.swift */; };
+		C4400C4422A663FE00063F2B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4400C4322A663FE00063F2B /* Coordinator.swift */; };
+		C4400C4622A6641400063F2B /* ViewController.Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4400C4522A6641400063F2B /* ViewController.Wrapper.swift */; };
+		C4400C4822A6643500063F2B /* View.Wrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4400C4722A6643500063F2B /* View.Wrapper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C4400C3622A6637500063F2B /* SwiftUIWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftUIWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4400C3922A6637500063F2B /* SwiftUIWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftUIWrapper.h; sourceTree = "<group>"; };
 		C4400C3A22A6637500063F2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4400C4122A6638300063F2B /* Nibless.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nibless.swift; sourceTree = "<group>"; };
+		C4400C4322A663FE00063F2B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		C4400C4522A6641400063F2B /* ViewController.Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.Wrapper.swift; sourceTree = "<group>"; };
+		C4400C4722A6643500063F2B /* View.Wrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.Wrapper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +56,10 @@
 			children = (
 				C4400C3922A6637500063F2B /* SwiftUIWrapper.h */,
 				C4400C3A22A6637500063F2B /* Info.plist */,
+				C4400C4122A6638300063F2B /* Nibless.swift */,
+				C4400C4322A663FE00063F2B /* Coordinator.swift */,
+				C4400C4522A6641400063F2B /* ViewController.Wrapper.swift */,
+				C4400C4722A6643500063F2B /* View.Wrapper.swift */,
 			);
 			path = SwiftUIWrapper;
 			sourceTree = "<group>";
@@ -95,6 +107,7 @@
 				TargetAttributes = {
 					C4400C3522A6637500063F2B = {
 						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -131,6 +144,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4400C4622A6641400063F2B /* ViewController.Wrapper.swift in Sources */,
+				C4400C4422A663FE00063F2B /* Coordinator.swift in Sources */,
+				C4400C4222A6638300063F2B /* Nibless.swift in Sources */,
+				C4400C4822A6643500063F2B /* View.Wrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +277,7 @@
 		C4400C3F22A6637500063F2B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EVL2DEPTTR;
@@ -276,6 +294,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.zkhaider.SwiftUIWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -284,6 +303,7 @@
 		C4400C4022A6637500063F2B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = EVL2DEPTTR;
